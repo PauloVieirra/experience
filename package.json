@@ -47,6 +47,7 @@
           "sonner": "^2.0.3",
           "tailwind-merge": "*",
           "tailwindcss": "*",
+          "@tailwindcss/postcss": "*",
           "postcss": "*",
           "autoprefixer": "*",
           "vaul": "^1.1.2"
