@@ -33,7 +33,7 @@ export default function MobilidadeContent() {
           <p className="font-semibold text-red-900 mb-2">Barreiras comuns:</p>
           <ul className="text-red-800 space-y-1">
             <li>• Elementos que só funcionam com mouse</li>
-            <li>• Botões muito pequenos (< 44x44px)</li>
+            <li>• Botões muito pequenos ({"<"} 44x44px)</li>
             <li>• Falta de indicador visual de foco</li>
             <li>• Menus que desaparecem automaticamente</li>
             <li>• Interações que requerem timing preciso</li>
