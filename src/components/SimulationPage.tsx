@@ -71,7 +71,7 @@ export default function SimulationPage() {
           disabilityType={type || ''}
         >
           <Suspense fallback={<div>Loading...</div>}>
-            {ContentComponent && <ContentComponent />}
+            {ContentComponent && <ContentComponent accessibleMode={accessibleMode} />}
           </Suspense>
         </ArticleContent>
       </div>
