@@ -1,10 +1,13 @@
+import { useAccessibility } from '../AccessibilityContext';
+
 interface AstigmatismoEffectProps {
   intensity: number;
 }
 
 export default function AstigmatismoEffect({ intensity }: AstigmatismoEffectProps) {
+  const { brightness: brightnessFromContext } = useAccessibility();
   const blur = (intensity / 100) * 6;
-  const brightness = 1 + (intensity / 100) * 0.5;
+  const brightness = brightnessFromContext / 100;
 
   return (
     <>

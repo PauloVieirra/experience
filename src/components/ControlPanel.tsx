@@ -16,6 +16,8 @@ import {
   ChevronUp,
   ChevronDown
 } from 'lucide-react'
+import { ScopedThemeToggle } from './ui/ScopedThemeToggle'
+import { BrightnessSlider } from './ui/BrightnessSlider'
 
 export default function ControlPanelModal({
   intensity,
@@ -77,7 +79,8 @@ export default function ControlPanelModal({
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'flex-end',
-          pointerEvents: isOpen ? 'auto' : 'none'
+          pointerEvents: isOpen ? 'auto' : 'none',
+          isolation: 'isolate',
         }}
         role="dialog"
         aria-modal="true"
@@ -195,7 +198,7 @@ export default function ControlPanelModal({
               </div>
 
               {/* Conteúdo sliders e switches */}
-              <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(1, 1fr)' : 'repeat(2, 1fr)', gap: '24px', marginBottom: '16px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)', gap: '24px', marginBottom: '16px' }}>
                 <div>
                   <Label htmlFor="intensity-slider" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                     <Gauge style={{ width: '16px', height: '16px' }} />
@@ -240,6 +243,18 @@ export default function ControlPanelModal({
                     step={1}
                   />
                 </div>
+
+                {disabilityType === 'astigmatismo' && (
+                  <>
+                    <div>
+                      <BrightnessSlider />
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Label>Tema</Label>
+                      <ScopedThemeToggle />
+                    </div>
+                  </>
+                )}
 
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', backgroundColor: '#F1F5F9', borderRadius: '8px', padding: '8px' }}>
                   <Label htmlFor="accessible-mode">{accessibleMode ? 'Modo Acessível' : 'Modo Comum'}</Label>
