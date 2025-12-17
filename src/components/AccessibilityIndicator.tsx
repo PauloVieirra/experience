@@ -44,6 +44,10 @@ const indicators: Record<string, {
   epilepsia: {
     problem: 'Elementos piscando rapidamente',
     solution: 'Animações suaves, sem flashes, avisos de segurança'
+  },
+  "acessibilidade-social": {
+    problem: 'Linguagem complexa e barreiras sociais',
+    solution: 'Textos claros, linguagem simples, inclusão social'
   }
 };
 
@@ -66,7 +70,7 @@ export default function AccessibilityIndicator({ accessibleMode, disabilityType 
         )}
         <div className="flex-1">
           <h3 className={`mb-2 ${accessibleMode ? 'text-green-900' : 'text-red-900'}`}>
-            {accessibleMode ? 'Modo Acessível Ativo' : 'Problemas de Acessibilidade Detectados'}
+            {accessibleMode ? 'Modo Acessível Ativo' : 'Simulação Ativa'}
           </h3>
           <p className={accessibleMode ? 'text-green-800' : 'text-red-800'}>
             {accessibleMode ? (

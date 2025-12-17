@@ -4,19 +4,19 @@ interface AutismoContentProps {
 
 export default function AutismoContent({ accessibleMode = false }: AutismoContentProps) {
   return (
-    <div className="space-y-8">
-      <header className="border-b-2 border-indigo-200 pb-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">
+    <div className="space-y-10">
+      <header className="border-b-2 border-indigo-200 pb-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
           Autismo: Navegando em um Mundo Digital Sensorialmente Amigável
         </h1>
-        <p className="text-lg text-slate-600">
+        <p className="text-lg text-slate-600 leading-relaxed">
           {accessibleMode
             ? "Compreenda como o excesso de estímulos afeta pessoas autistas e como criar interfaces inclusivas"
             : "Entenda como criar experiências digitais que 'conversam' com todos os tipos de mentes"}
         </p>
       </header>
 
-      <section className="space-y-4">
+      <section className="space-y-5">
         <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-3">
           <span className="text-indigo-600">🧠</span> O que é?
         </h2>
@@ -44,7 +44,7 @@ export default function AutismoContent({ accessibleMode = false }: AutismoConten
         )}
       </section>
 
-      <section className="space-y-4">
+      <section className="space-y-5">
         <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-3">
           <span className="text-red-600">⚠️</span> O Desafio
         </h2>
@@ -53,9 +53,9 @@ export default function AutismoContent({ accessibleMode = false }: AutismoConten
             <p className="text-base text-slate-700 leading-relaxed">
               O modo "sem acessibilidade" pode apresentar elementos que causam sobrecarga sensorial. Animações que se movem constantemente, botões que emitem sons ao passar o mouse e uma abundância de cores vibrantes podem criar uma experiência estressante e confusa. A linguagem figurativa ou irônica também pode ser de difícil compreensão.
             </p>
-            <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
-              <p className="font-semibold text-red-900 mb-2">Barreiras comuns:</p>
-              <ul className="text-red-800 space-y-1">
+            <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded mt-4">
+              <p className="font-semibold text-red-900 mb-3">Barreiras comuns:</p>
+              <ul className="text-red-800 space-y-2">
                 <li>• Animações automáticas e contínuas</li>
                 <li>• Sons inesperados ao interagir</li>
                 <li>• Muitas cores vibrantes ou contrastantes</li>
@@ -72,9 +72,9 @@ export default function AutismoContent({ accessibleMode = false }: AutismoConten
             <p className="text-base text-slate-700 leading-relaxed">
               "Imagine tentar dançar tango em uma pista de skate - as regras do jogo mudam completamente quando o cérebro processa informações de forma não-linear."
             </p>
-            <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
-              <p className="font-semibold text-red-900 mb-2">Problemas que "quebram o encanto":</p>
-              <ul className="text-red-800 space-y-1">
+            <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded mt-4">
+              <p className="font-semibold text-red-900 mb-3">Problemas que "quebram o encanto":</p>
+              <ul className="text-red-800 space-y-2">
                 <li>• "Fogos de artifício visuais" que disparam sem aviso</li>
                 <li>• "Sons fantasma" que aparecem do nada</li>
                 <li>• "Paletas de cores que gritam" em vez de conversarem</li>
@@ -86,7 +86,7 @@ export default function AutismoContent({ accessibleMode = false }: AutismoConten
         )}
       </section>
 
-      <section className="space-y-4">
+      <section className="space-y-5">
         <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-3">
           <span className="text-green-600">✓</span> A Solução Acessível
         </h2>
@@ -95,22 +95,22 @@ export default function AutismoContent({ accessibleMode = false }: AutismoConten
             <p className="text-base text-slate-700 leading-relaxed">
               O modo "com acessibilidade" foca em criar um ambiente digital calmo e previsível:
             </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">Layout Limpo e Consistente</h3>
-                <p className="text-green-800 text-sm">A estrutura da página é clara, com seções bem definidas e uma navegação lógica e previsível.</p>
+            <div className="grid md:grid-cols-2 gap-5 mt-4">
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">Layout Limpo e Consistente</h3>
+                <p className="text-green-800 text-sm leading-relaxed">A estrutura da página é clara, com seções bem definidas e uma navegação lógica e previsível.</p>
               </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">Linguagem Clara e Direta</h3>
-                <p className="text-green-800 text-sm">O texto é objetivo, evitando ambiguidades, gírias ou sarcasmo que possam causar confusão.</p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">Linguagem Clara e Direta</h3>
+                <p className="text-green-800 text-sm leading-relaxed">O texto é objetivo, evitando ambiguidades, gírias ou sarcasmo que possam causar confusão.</p>
               </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">Controle do Usuário</h3>
-                <p className="text-green-800 text-sm">Não há animações ou sons automáticos. O usuário tem controle total sobre a reprodução de qualquer mídia.</p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">Controle do Usuário</h3>
+                <p className="text-green-800 text-sm leading-relaxed">Não há animações ou sons automáticos. O usuário tem controle total sobre a reprodução de qualquer mídia.</p>
               </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">Design Sóbrio</h3>
-                <p className="text-green-800 text-sm">A paleta de cores é suave e o design é minimalista para evitar a sobrecarga visual.</p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">Design Sóbrio</h3>
+                <p className="text-green-800 text-sm leading-relaxed">A paleta de cores é suave e o design é minimalista para evitar a sobrecarga visual.</p>
               </div>
             </div>
           </>
@@ -122,32 +122,32 @@ export default function AutismoContent({ accessibleMode = false }: AutismoConten
             <p className="text-base text-slate-700 leading-relaxed">
               "É como compor uma música onde cada nota é tocada no momento exato, criando harmonia em vez de caos."
             </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">"Arquitetura Clara"</h3>
-                <p className="text-green-800 text-sm">A casa digital tem cômodos bem organizados, sem portas secretas ou corredores escondidos.</p>
+            <div className="grid md:grid-cols-2 gap-5 mt-4">
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">"Arquitetura Clara"</h3>
+                <p className="text-green-800 text-sm leading-relaxed">A casa digital tem cômodos bem organizados, sem portas secretas ou corredores escondidos.</p>
               </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">"Conversação Direta"</h3>
-                <p className="text-green-800 text-sm">As palavras dizem exatamente o que querem dizer, sem jogos de adivinhação ou charadas.</p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">"Conversação Direta"</h3>
+                <p className="text-green-800 text-sm leading-relaxed">As palavras dizem exatamente o que querem dizer, sem jogos de adivinhação ou charadas.</p>
               </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">"Comando Pessoal"</h3>
-                <p className="text-green-800 text-sm">O usuário é o maestro da orquestra digital, decidindo quando e como cada instrumento toca.</p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">"Comando Pessoal"</h3>
+                <p className="text-green-800 text-sm leading-relaxed">O usuário é o maestro da orquestra digital, decidindo quando e como cada instrumento toca.</p>
               </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">"Estética Minimalista"</h3>
-                <p className="text-green-800 text-sm">A pintura digital usa cores suaves, criando uma galeria onde cada obra tem seu espaço.</p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">"Estética Minimalista"</h3>
+                <p className="text-green-800 text-sm leading-relaxed">A pintura digital usa cores suaves, criando uma galeria onde cada obra tem seu espaço.</p>
               </div>
             </div>
           </>
         )}
       </section>
 
-      <section className="space-y-4">
+      <section className="space-y-5">
         <h2 className="text-2xl font-bold text-slate-900">💡 Recomendações para Designers e Desenvolvedores</h2>
         {accessibleMode ? (
-          <ul className="space-y-3">
+          <ul className="space-y-4 mt-4">
             <li className="flex gap-3">
               <span className="text-indigo-600 font-bold">→</span>
               <span className="text-slate-700"><strong>Desabilite animações automáticas</strong> por padrão; permita que o usuário as ative</span>
@@ -170,7 +170,7 @@ export default function AutismoContent({ accessibleMode = false }: AutismoConten
             </li>
           </ul>
         ) : (
-          <ul className="space-y-3">
+          <ul className="space-y-4 mt-4">
             <li className="flex gap-3">
               <span className="text-indigo-600 font-bold">→</span>
               <span className="text-slate-700">"Desligue os fogos de artifício visuais" deixando o usuário no comando do espetáculo</span>
@@ -195,9 +195,9 @@ export default function AutismoContent({ accessibleMode = false }: AutismoConten
         )}
       </section>
 
-      <section className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
-        <h3 className="font-bold text-blue-900 mb-2">📚 Referências</h3>
-        <ul className="text-blue-800 space-y-1 text-sm">
+      <section className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mt-6">
+        <h3 className="font-bold text-blue-900 mb-3">📚 Referências</h3>
+        <ul className="text-blue-800 space-y-2 text-sm">
           <li>• Autism Spectrum Australia - Web Accessibility Guidelines</li>
           <li>• WCAG 2.1 - Animation and Motion Guidelines</li>
           <li>• CSS Media Query: prefers-reduced-motion</li>

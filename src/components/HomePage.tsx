@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Disability } from './interfaces/Disability';
-import { Sparkles, Eye, Brain, Ear, Accessibility, Zap } from 'lucide-react';
+import { Sparkles, Eye, Brain, Ear, Accessibility, Zap, BookText } from 'lucide-react';
 
 const disabilities: Disability[] = [
   { id: 'catarata', name: 'Catarata', description: 'Visão embaçada e opaca', icon: Eye, color: 'bg-blue-100 text-blue-600', locked: false },
@@ -15,6 +15,7 @@ const disabilities: Disability[] = [
   { id: 'auditiva', name: 'Deficiência Auditiva', description: 'Perda parcial ou total da audição', icon: Ear, color: 'bg-teal-100 text-teal-600', locked: false },
   { id: 'mobilidade', name: 'Deficiência Motora', description: 'Dificuldade de interação com mouse', icon: Accessibility, color: 'bg-sky-100 text-sky-600', locked: false },
   { id: 'epilepsia', name: 'Epilepsia', description: 'Sensibilidade a luzes piscantes', icon: Zap, color: 'bg-pink-100 text-pink-600', locked: false },
+  { id: 'acessibilidade-social', name: 'Acessibilidade Social', description: 'Linguagem clara, inclusão para todos os níveis de letramento', icon: BookText, color: 'bg-indigo-100 text-indigo-600', locked: false },
 ];
 
 export default function HomePage() {

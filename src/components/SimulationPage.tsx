@@ -17,6 +17,7 @@ const contentMap = {
   glaucoma: lazy(() => import('./content/GlaucomaContent')),
   mobilidade: lazy(() => import('./content/MobilidadeContent')),
   tdah: lazy(() => import('./content/TDAHContent')),
+  "acessibilidade-social": lazy(() => import('./content/AcessibilidadeSocialContent')),
 };
 
 export default function SimulationPage() {

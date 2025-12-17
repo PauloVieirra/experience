@@ -48,7 +48,7 @@ export default function TDAHContent({ accessibleMode = false }: TDAHContentProps
   };
 
   return (
-    <div className="space-y-8 relative">
+    <div className="space-y-10 relative">
       {/* Modal distrativo */}
       {showModal && !accessibleMode && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -84,18 +84,18 @@ export default function TDAHContent({ accessibleMode = false }: TDAHContentProps
         </div>
       )}
 
-      <header className="border-b-2 border-purple-200 pb-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">
+      <header className="border-b-2 border-purple-200 pb-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
           TDAH: Foco e Clareza em um Mundo Digital Distraído
         </h1>
-        <p className="text-lg text-slate-600">
+        <p className="text-lg text-slate-600 leading-relaxed">
           {accessibleMode
             ? "Entenda como ambientes digitais bem organizados beneficiam pessoas com TDAH"
             : "Descubra como o mundo digital pode ser uma montanha-russa de atenção!"}
         </p>
       </header>
 
-      <section className="space-y-4">
+      <section className="space-y-5">
         <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-3">
           <span className="text-purple-600">🎯</span> O que é?
         </h2>
@@ -138,7 +138,7 @@ export default function TDAHContent({ accessibleMode = false }: TDAHContentProps
         
       </section>
 
-      <section className="space-y-4">
+      <section className="space-y-5">
         <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-3">
           <span className="text-red-600">⚠️</span> O Desafio
         </h2>
@@ -147,9 +147,9 @@ export default function TDAHContent({ accessibleMode = false }: TDAHContentProps
             <p className="text-base text-slate-700 leading-relaxed">
               O modo "sem acessibilidade" pode ser um campo minado para a atenção. Anúncios piscantes, vídeos em reprodução automática, pop-ups que exigem ação imediata e múltiplos "call-to-action" competindo pela sua atenção podem sobrecarregar a função executiva e tornar a conclusão de uma tarefa quase impossível.
             </p>
-            <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
-              <p className="font-semibold text-red-900 mb-2">Barreiras comuns:</p>
-              <ul className="text-red-800 space-y-1">
+            <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded mt-4">
+              <p className="font-semibold text-red-900 mb-3">Barreiras comuns:</p>
+              <ul className="text-red-800 space-y-2">
                 <li>• Pop-ups e modais inesperados</li>
                 <li>• Vídeos e anúncios em reprodução automática</li>
                 <li>• Múltiplos "call-to-action" na mesma página</li>
@@ -172,9 +172,9 @@ export default function TDAHContent({ accessibleMode = false }: TDAHContentProps
             <p className="text-base text-slate-700 leading-relaxed">
               É como tentar cozinhar um jantar romântico enquanto o telefone toca, a campainha toca, e alguém joga fogos de artifício na cozinha!
             </p>
-            <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
-              <p className="font-semibold text-red-900 mb-2">Armadilhas da distração:</p>
-              <ul className="text-red-800 space-y-1">
+            <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded mt-4">
+              <p className="font-semibold text-red-900 mb-3">Armadilhas da distração:</p>
+              <ul className="text-red-800 space-y-2">
                 <li>• "Festas surpresa digitais" que pulam na tela</li>
                 <li>• "Shows pirotécnicos visuais" que piscam sem parar</li>
                 <li>• "Bandas musicais automáticas" que tocam sem permissão</li>
@@ -186,7 +186,7 @@ export default function TDAHContent({ accessibleMode = false }: TDAHContentProps
         )}
       </section>
 
-      <section className="space-y-4">
+      <section className="space-y-5">
         <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-3">
           <span className="text-green-600">✓</span> A Solução Acessível
         </h2>
@@ -195,22 +195,22 @@ export default function TDAHContent({ accessibleMode = false }: TDAHContentProps
             <p className="text-base text-slate-700 leading-relaxed">
               O modo "com acessibilidade" visa criar um caminho claro e sem distrações para o usuário:
             </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">Um Objetivo de Cada Vez</h3>
-                <p className="text-green-800 text-sm">A página tem um foco claro e um único "call-to-action" principal, tornando o objetivo evidente.</p>
+            <div className="grid md:grid-cols-2 gap-5 mt-4">
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">Um Objetivo de Cada Vez</h3>
+                <p className="text-green-800 text-sm leading-relaxed">A página tem um foco claro e um único "call-to-action" principal, tornando o objetivo evidente.</p>
               </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">Mínimo de Distrações</h3>
-                <p className="text-green-800 text-sm">Elementos desnecessários são removidos. Não há conteúdo que se mova ou mude sem a interação do usuário.</p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">Mínimo de Distrações</h3>
+                <p className="text-green-800 text-sm leading-relaxed">Elementos desnecessários são removidos. Não há conteúdo que se mova ou mude sem a interação do usuário.</p>
               </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">Conteúdo Escaneável</h3>
-                <p className="text-green-800 text-sm">O texto é dividido em seções curtas com títulos. Listas e negrito destacam informações importantes.</p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">Conteúdo Escaneável</h3>
+                <p className="text-green-800 text-sm leading-relaxed">O texto é dividido em seções curtas com títulos. Listas e negrito destacam informações importantes.</p>
               </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">Feedback Imediato e Claro</h3>
-                <p className="text-green-800 text-sm">Quando o usuário realiza uma ação, há feedback claro de que foi recebida e do que vai acontecer.</p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">Feedback Imediato e Claro</h3>
+                <p className="text-green-800 text-sm leading-relaxed">Quando o usuário realiza uma ação, há feedback claro de que foi recebida e do que vai acontecer.</p>
               </div>
             </div>
           </>
@@ -229,32 +229,32 @@ export default function TDAHContent({ accessibleMode = false }: TDAHContentProps
             <p className="text-base text-slate-700 leading-relaxed">
               É como organizar uma biblioteca onde cada livro está na prateleira certa e não há barulho de fundo distraindo a leitura.
             </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">"Foco Laser"</h3>
-                <p className="text-green-800 text-sm">A página tem uma missão clara, como um farol guiando o navio através da neblina.</p>
+            <div className="grid md:grid-cols-2 gap-5 mt-4">
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">"Foco Laser"</h3>
+                <p className="text-green-800 text-sm leading-relaxed">A página tem uma missão clara, como um farol guiando o navio através da neblina.</p>
               </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">"Jardim Tranquilo"</h3>
-                <p className="text-green-800 text-sm">Elementos distrativos são podados como ervas daninhas em um jardim bem cuidado.</p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">"Jardim Tranquilo"</h3>
+                <p className="text-green-800 text-sm leading-relaxed">Elementos distrativos são podados como ervas daninhas em um jardim bem cuidado.</p>
               </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">"Mapa Clara"</h3>
-                <p className="text-green-800 text-sm">O conteúdo é dividido em capítulos curtos com títulos que funcionam como placas de sinalização.</p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">"Mapa Clara"</h3>
+                <p className="text-green-800 text-sm leading-relaxed">O conteúdo é dividido em capítulos curtos com títulos que funcionam como placas de sinalização.</p>
               </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <h3 className="font-bold text-green-900 mb-2">"Diálogo Honesto"</h3>
-                <p className="text-green-800 text-sm">Cada ação recebe uma resposta clara, como uma conversa entre amigos confiáveis.</p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded">
+                <h3 className="font-bold text-green-900 mb-3">"Diálogo Honesto"</h3>
+                <p className="text-green-800 text-sm leading-relaxed">Cada ação recebe uma resposta clara, como uma conversa entre amigos confiáveis.</p>
               </div>
             </div>
           </>
         )}
       </section>
 
-      <section className="space-y-4">
+      <section className="space-y-5">
         <h2 className="text-2xl font-bold text-slate-900">💡 Recomendações para Designers e Desenvolvedores</h2>
         {accessibleMode ? (
-          <ul className="space-y-3">
+          <ul className="space-y-4 mt-4">
             <li className="flex gap-3">
               <span className="text-purple-600 font-bold">→</span>
               <span className="text-slate-700"><strong>Elimine pop-ups automáticos</strong>; crie navegação clara em vez disso</span>
@@ -277,7 +277,7 @@ export default function TDAHContent({ accessibleMode = false }: TDAHContentProps
             </li>
           </ul>
         ) : (
-          <ul className="space-y-3">
+          <ul className="space-y-4 mt-4">
             <li className="flex gap-3">
               <span className="text-purple-600 font-bold">→</span>
               <span className="text-slate-700">"Bane festas surpresa digitais" criando caminhos claros em vez de labirintos</span>
@@ -287,7 +287,6 @@ export default function TDAHContent({ accessibleMode = false }: TDAHContentProps
               <span className="text-slate-700">"Silencie os DJs automáticos" deixando o usuário escolher quando ouvir música</span>
             </li>
             <li className="flex gap-3">
-              <span className="text-purple-600 font-bold">→</span>
               <span className="text-purple-600 font-bold">→</span>
               <span className="text-slate-700">"Limite o buffet de ações" a apenas 1-2 opções principais por página</span>
             </li>
@@ -303,9 +302,9 @@ export default function TDAHContent({ accessibleMode = false }: TDAHContentProps
         )}
       </section>
 
-      <section className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
-        <h3 className="font-bold text-blue-900 mb-2">📚 Referências</h3>
-        <ul className="text-blue-800 space-y-1 text-sm">
+      <section className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mt-6">
+        <h3 className="font-bold text-blue-900 mb-3">📚 Referências</h3>
+        <ul className="text-blue-800 space-y-2 text-sm">
           <li>• ADHD & Accessibility - National Center for Learning Disabilities</li>
           <li>• WCAG 2.1 - Motion and Animation Guidelines</li>
           <li>• Web Design for ADHD - WebAIM Guidelines</li>
